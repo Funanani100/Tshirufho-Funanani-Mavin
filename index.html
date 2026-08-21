@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvin Tshirufho; Software Engineer</title>
+  <meta name="description" content="Software engineer building full-stack applications, backend systems, and secure web solutions." />
+  <meta name="author" content="Marvin Tshirufho" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Marvin Tshirufho; Software Engineer" />
+  <meta property="og:description" content="Full-stack developer with a security mindset. Building APIs, databases, and cloud-native systems." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (optional, but keep for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    
+
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="logo">Funanani M.<span> Tshirufho</span></a>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="#home" aria-current="page">Home</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="section-label">Software Engineer</span>
+        <h1>Building secure, scalable web systems</h1>
+        <p class="hero-tagline">Full-stack development · APIs · Databases · Cloud · Security</p>
+        <p>
+          I design and build full‑stack applications and backend systems with a focus on clean architecture,
+          reliable APIs, secure data handling, and practical user experiences.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View My Work</a>
+          <a href="https://github.com/funanani100" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+          <a href="assets/documents/Funanani_Tshirufho_Software_Engineer_CV.pdf" class="btn btn-outline">Resume</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="line"><span class="hl">const</span> system <span class="hl">=</span> <span class="str">{</span></div>
+        <div class="line">&nbsp;&nbsp;frontend: <span class="str">"React"</span>,</div>
+        <div class="line">&nbsp;&nbsp;backend: <span class="str">"Node.js"</span>,</div>
+        <div class="line">&nbsp;&nbsp;database: <span class="str">"PostgreSQL"</span>,</div>
+        <div class="line">&nbsp;&nbsp;auth: <span class="str">"JWT"</span>,</div>
+        <div class="line">&nbsp;&nbsp;infra: <span class="str">"Docker"</span>,</div>
+        <div class="line">&nbsp;&nbsp;security: <span class="num">true</span></div>
+        <div class="line"><span class="str">}</span>;</div>
+        <div class="line"><span class="hl">export</span> <span class="hl">default</span> system;</div>
+        <div class="line"><span class="cursor"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ENGINEERING SNAPSHOT ===== -->
+  <section>
+    <div class="container">
+      <span class="section-label">Engineering focus</span>
+      <h2 class="section-title">What I build</h2>
+      <div class="snapshot-grid">
+        <div class="snapshot-card reveal">
+          <span class="icon"><i class="fas fa-layer-group"></i></span>
+          <h3>Full‑Stack Development</h3>
+          <p>React, JavaScript, Node.js, and modern web architecture.</p>
+        </div>
+        <div class="snapshot-card reveal">
+          <span class="icon"><i class="fas fa-server"></i></span>
+          <h3>Backend Engineering</h3>
+          <p>REST APIs, authentication, authorization, and server‑side logic.</p>
+        </div>
+        <div class="snapshot-card reveal">
+          <span class="icon"><i class="fas fa-database"></i></span>
+          <h3>Data &amp; Infrastructure</h3>
+          <p>PostgreSQL, MySQL, Docker, AWS, and development infrastructure.</p>
+        </div>
+        <div class="snapshot-card reveal">
+          <span class="icon"><i class="fas fa-shield-alt"></i></span>
+          <h3>Security‑Minded Engineering</h3>
+          <p>Secure authentication, input validation, web security, and threat‑aware design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SELECTED WORK ===== -->
+  <section id="work" style="background: var(--bg-secondary);">
+    <div class="container">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">Selected Projects</h2>
+      <p class="section-subtitle">Real‑world software I’ve designed, built, and secured.</p>
+
+      <div class="projects-grid">
+
+        <!-- FundBridge -->
+        <article class="project-card reveal">
+          <div class="card-body">
+            <div class="category">Full‑Stack Application</div>
+            <h3>FundBridge</h3>
+            <p class="project-description">
+              Student funding management platform connecting sponsors with applicants.
+            </p>
+            <div class="project-details">
+              <div class="detail-item">
+                <span class="label">Problem</span>
+                <span class="value">Inefficient funding application and review process.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Solution</span>
+                <span class="value">Centralized platform with role‑based workflows, document upload, and real‑time status tracking.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">My contribution</span>
+                <span class="value">Full‑stack development: React frontend, Node.js/Express API, PostgreSQL/Prisma, JWT auth, AWS S3 file storage, Docker containerization.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Security</span>
+                <span class="value">JWT authentication, role‑based access control, input sanitization, secure file uploads.</span>
+              </div>
+            </div>
+            <div class="tech-tags">
+              <span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>JWT</span><span>AWS S3</span><span>Docker</span>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn-primary">Live Demo</a>
+              <a href="https://github.com/funanani100/fundbridge" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Shadow AI Detection -->
+        <article class="project-card reveal">
+          <div class="card-body">
+            <div class="category">Security Monitoring System</div>
+            <h3>Shadow AI Detection</h3>
+            <p class="project-description">
+              Network monitoring and anomaly detection using Zeek logs and Python.
+            </p>
+            <div class="project-details">
+              <div class="detail-item">
+                <span class="label">Problem</span>
+                <span class="value">Unauthorized AI tools and data exfiltration risks.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Solution</span>
+                <span class="value">Parsed DNS, SSL, HTTP, and connection logs to detect anomalies; generated alerts and evidence hashes.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">My contribution</span>
+                <span class="value">Built detection logic in Python, integrated with Zeek, designed SQLite storage, created monitoring dashboard.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Security</span>
+                <span class="value">Alerting on suspicious patterns, data‑leak detection, evidence hashing for integrity.</span>
+              </div>
+            </div>
+            <div class="tech-tags">
+              <span>Python</span><span>Zeek</span><span>SQLite</span><span>Dash</span><span>Network Analysis</span>
+            </div>
+            <div class="actions">
+              <a href="shadow-ai-case-study.html" class="btn btn-outline">Case Study</a>
+              <a href="https://github.com/funanani100/shadow-ai" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SkillBridge -->
+        <article class="project-card reveal">
+          <div class="card-body">
+            <div class="category">Full‑Stack Platform</div>
+            <h3>SkillBridge</h3>
+            <p class="project-description">
+              Graduate upskilling and internship matching platform.
+            </p>
+            <div class="project-details">
+              <div class="detail-item">
+                <span class="label">Problem</span>
+                <span class="value">Lack of visibility between graduates and employers.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Solution</span>
+                <span class="value">A platform where graduates can showcase skills and employers can discover talent.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">My contribution</span>
+                <span class="value">Designed database schema, built REST API with Node.js, integrated JWT authentication, developed React frontend.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Security</span>
+                <span class="value">Role‑based access, secure user profiles, input validation.</span>
+              </div>
+            </div>
+            <div class="tech-tags">
+              <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>JWT</span><span>Tailwind</span>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn-outline">Live Demo</a>
+              <a href="https://github.com/funanani100/skillbridge" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- MindMate -->
+        <article class="project-card reveal">
+          <div class="card-body">
+            <div class="category">Web Application</div>
+            <h3>MindMate</h3>
+            <p class="project-description">
+              Student mental health and counselling support system.
+            </p>
+            <div class="project-details">
+              <div class="detail-item">
+                <span class="label">Problem</span>
+                <span class="value">Students lack easy access to counselling resources.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Solution</span>
+                <span class="value">A secure platform for scheduling, messaging, and resource sharing between students and counsellors.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">My contribution</span>
+                <span class="value">Built user workflows, role‑based systems (student/counsellor/admin), designed database schema, implemented privacy‑conscious data handling.</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Security</span>
+                <span class="value">Data encryption, access control, secure messaging.</span>
+              </div>
+            </div>
+            <div class="tech-tags">
+              <span>React</span><span>Node.js</span><span>MySQL</span><span>JWT</span>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn-outline">Case Study</a>
+              <a href="https://github.com/funanani100/mindmate" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECHNOLOGY STACK ===== -->
+  <section id="skills">
+    <div class="container">
+      <span class="section-label">Expertise</span>
+      <h2 class="section-title">Technology Stack</h2>
+      <p class="section-subtitle">Tools and technologies I use regularly.</p>
+
+      <div class="stack-grid">
+        <div class="stack-category">
+          <h4>Languages</h4>
+          <ul>
+            <li>JavaScript (ES6+)</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>TypeScript</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h4>Frontend</h4>
+          <ul>
+            <li>React</li>
+            <li>HTML5</li>
+            <li>CSS3 / Tailwind</li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h4>Backend</h4>
+          <ul>
+            <li>Node.js / Express</li>
+            <li>REST APIs</li>
+            <li>JWT / OAuth</li>
+            <li>Authentication & Authorization </li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h4>Databases</h4>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>SQLite</li>
+            <li>Prisma ORM</li>
+            <li>Database Design</li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h4>DevOps &amp; Cloud</h4>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Docker</li>
+            <li>AWS (S3, EC2, RDS)</li>
+            <li>LocalStack</li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h4>Security &amp; Testing</h4>
+          <ul>
+            <li>Burp Suite</li>
+            <li>Nmap</li>
+            <li>Kali Linux</li>
+            <li>OWASP top 10</li>
+            <li>Postman</li>
+            <li>Unit & Integration Testing</li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h4>Software Engineering</h4>
+          <ul>
+            <li>Object-Oriented Programming</li>
+            <li>Data Structures & Algorithms</li>
+            <li>API Design</li>
+            <li>Software Architecture</li>
+            <li>Debugging</li>
+            <li>Agile/Scrum</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ENGINEERING PRACTICES ===== -->
+  <section style="background: var(--bg-secondary);">
+    <div class="container">
+      <span class="section-label">Approach</span>
+      <h2 class="section-title">Engineering Practices</h2>
+      <p class="section-subtitle">How I build software.</p>
+      <div class="practices-grid">
+        <div class="practice-card reveal">
+          <h4>Clean Architecture</h4>
+          <p>Structure applications around maintainable components and clear responsibilities.</p>
+        </div>
+        <div class="practice-card reveal">
+          <h4>API Design</h4>
+          <p>Build predictable REST APIs with validation and proper error handling.</p>
+        </div>
+        <div class="practice-card reveal">
+          <h4>Security</h4>
+          <p>Apply authentication, authorization, input validation, and secure data handling.</p>
+        </div>
+        <div class="practice-card reveal">
+          <h4>Database Design</h4>
+          <p>Design relational schemas and maintain data integrity.</p>
+        </div>
+        <div class="practice-card reveal">
+          <h4>Testing &amp; Debugging</h4>
+          <p>Use systematic debugging, testing, and logging.</p>
+        </div>
+        <div class="practice-card reveal">
+          <h4>Git &amp; Collaboration</h4>
+          <p>Use Git/GitHub for source control, versioning, and project collaboration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <span class="section-label">About</span>
+        <h2>Funanani M. Tshirufho</h2>
+        <p>
+          I’m a software engineer with a focus on full‑stack and backend development.
+          I build web applications, APIs, and database‑driven systems with a strong
+          emphasis on clean code, security, and user experience.
+        </p>
+        <p>
+          My background includes a Diploma in Information Technology, hands‑on
+          experience in software development, and a security‑minded approach
+          that I apply to every project. I’m passionate about creating reliable,
+          maintainable, and secure software that solves real problems.
+        </p>
+        <p>
+          Currently, I’m expanding my knowledge in cloud infrastructure and
+          system design while building projects that combine full‑stack
+          development with practical security measures.
+        </p>
+        <a href="assets/documents/Funanani_Tshirufho_Software_Engineer_CV.pdf" class="btn btn-primary" style="margin-top: 1rem;">Download Resume</a>
+      </div>
+
+      <div class="about-timeline reveal">
+        <div class="tl-item">
+          <div class="tl-year">2025 – Present</div>
+          <div class="tl-title">Software Engineering Projects</div>
+          <div class="tl-desc">Developing full‑stack applications (FundBridge, SkillBridge, MindMate) and security monitoring tools.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2025(May) – 2025(Aug)</div>
+          <div class="tl-title">Work Integrated Learning (IT Support / Dev)</div>
+          <div class="tl-desc">Hands‑on experience in IT support, scripting, and development in a professional environment.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2023 – 2025</div>
+          <div class="tl-title">Diploma in Information Technology</div>
+          <div class="tl-desc">Completed diploma with focus on programming, databases, networking, and security.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2022</div>
+          <div class="tl-title">Security &amp; Networking Foundations</div>
+          <div class="tl-desc">Virtualization, Kali Linux, penetration testing labs, and Cisco networking basics.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section style="background: var(--bg-secondary);">
+    <div class="container">
+      <span class="section-label">Learning</span>
+      <h2 class="section-title">Certifications &amp; Training</h2>
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <span class="cert-name">Cisco Networking Basics</span>
+          <span class="cert-status in-progress">In progress</span>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-name">Cisco Introduction in Cybersecurity</span>
+          <span class="cert-status completed">Completed</span>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-name">OWASP Top 10 – Web Application Security</span>
+          <span class="cert-status completed">Completed (Course)</span>
+        </div>
+        <div class="cert-card reveal">
+          <span class="cert-name">AI Prompt Engineering Masterclass</span>
+          <span class="cert-status completed">Completed</span>
+      </div>
+      <div class="cert-card reveal">
+          <span class="cert-name">AWS Certified Cloud Practitioner</span>
+          <span class="cert-status completed">Completed</span>
+      </div>
+      <div class="cert-card reveal">
+          <span class="cert-name">Microsoft Certified Azure Fundamentals</span>
+          <span class="cert-status completed">Completed</span>
+      </div>
+      <div class="cert-card reveal">
+          <span class="cert-name">TryHackMe - Advert of Cyber 2024</span>
+          <span class="cert-status completed">Completed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <span class="section-label">Contact</span>
+      <h2 class="section-title">Let’s connect</h2>
+      <p class="section-subtitle">
+        Have a software engineering opportunity, project, or technical conversation in mind?
+        Reach out; I’d love to hear from you.
+      </p>
+
+      <div class="contact-grid">
+        <!-- Form (uses Formspree as example, replace with your endpoint) -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/yourFormID" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required aria-required="true" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required aria-required="true" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div id="formFeedback" aria-live="polite" style="margin-top: 0.5rem;"></div>
+        </form>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <a href="mailto:mrvnmunyai@gmail.com">mrvnmunyai@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="icon"><i class="fab fa-github"></i></span>
+            <a href="https://github.com/funanani100" target="_blank" rel="noopener noreferrer">github.com/funanani100</a>
+          </div>
+          <div class="contact-item">
+            <span class="icon"><i class="fab fa-linkedin-in"></i></span>
+            <a href="https://linkedin.com/in/funanani-tshirufho" target="_blank" rel="noopener noreferrer">linkedin.com/in/funanani-tshirufho</a>
+          </div>
+          <div class="contact-item">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span>
+            <a href="assets/documents/Funanani_Tshirufho_Software_Engineer_CV.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Marvin Tshirufho &mdash; Built with <span style="color: var(--accent);">&#9829;</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
