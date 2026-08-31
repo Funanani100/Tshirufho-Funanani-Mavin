@@ -1,73 +1,61 @@
 
 (function() {
-    'use strict';
+  'use strict';
 
-    // ----- NAVIGATION TOGGLE (mobile) -----
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('main-nav');
-    const navLinks = mainNav.querySelectorAll('a');
+  const navToggle = document.getElementById('navToggle'); // your hamburger button
+  const mainNav = document.getElementById('mainNav');     // your <nav> element
+  const navLinks = mainNav ? mainNav.querySelectorAll('a') : [];
 
-    function toggleNav(forceState) {
+  if (!navToggle || !mainNav) return; // exit if elements missing
+
+  // Open/close function
+  function toggleNav(forceState) {
     const isOpen = forceState !== undefined ? forceState : mainNav.classList.toggle('open');
     const expanded = isOpen ? 'true' : 'false';
     navToggle.setAttribute('aria-expanded', expanded);
-    // change icon
+    // Change icon (if using Font Awesome)
     const icon = navToggle.querySelector('i');
     if (icon) {
-        icon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+      icon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
     }
+    // Prevent body scroll when menu open (optional)
+    document.body.style.overflow = isOpen ? 'hidden' : '';
     return isOpen;
-    }
+  }
 
-    navToggle.addEventListener('click', function(e) {
+  // Click toggle
+  navToggle.addEventListener('click', function(e) {
     e.stopPropagation();
-    const isOpen = mainNav.classList.contains('open');
-    toggleNav(!isOpen);
-    });
+    toggleNav();
+  });
 
-    // close on link click
-    navLinks.forEach(function(link) {
+  // Close on link click
+  navLinks.forEach(function(link) {
     link.addEventListener('click', function() {
-        if (mainNav.classList.contains('open')) {
+      if (mainNav.classList.contains('open')) {
         toggleNav(false);
-        }
+      }
     });
-    });
+  });
 
-    // close on escape
-    document.addEventListener('keydown', function(e) {
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && mainNav.classList.contains('open')) {
-        toggleNav(false);
-        navToggle.focus();
+      toggleNav(false);
+      navToggle.focus();
     }
-    });
+  });
 
-    // ----- SCROLL REVEAL (IntersectionObserver) -----
-    const revealElements = document.querySelectorAll('.reveal');
-
-    if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            // Optionally unobserve after reveal
-            // observer.unobserve(entry.target);
-        }
-        });
-    }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -40px 0px'
-    });
-
-    revealElements.forEach(function(el) {
-        observer.observe(el);
-    });
-    } else {
-    // fallback: show all
-    revealElements.forEach(function(el) {
-        el.classList.add('visible');
-    });
+  // Close on outside click (optional)
+  document.addEventListener('click', function(e) {
+    if (mainNav.classList.contains('open') && !mainNav.contains(e.target) && e.target !== navToggle) {
+      toggleNav(false);
     }
+  });
+
+  // Ensure aria-expanded is initially correct
+  navToggle.setAttribute('aria-expanded', 'false');
+})();
 
     // ----- CONTACT FORM (using Formspree or similar) -----
     const form = document.getElementById('contactForm');
