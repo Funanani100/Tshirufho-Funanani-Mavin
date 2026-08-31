@@ -702,6 +702,19 @@ footer {
   nav a:focus {
     color: var(--text-primary);
   }
+    .project-card .project-details {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    }
+    .project-card .card-body {
+    padding: 1.5rem;
+    }
+    .hero {
+    padding: 6rem 0 3rem;
+    }
+    .stack-grid {
+    grid-template-columns: 1fr 1fr;
+    }
 
   /* Prevent body scroll when menu is open */
   body.menu-open {
