@@ -652,14 +652,15 @@ footer {
     }
 }
 
+/* Hide nav on mobile by default */
 @media (max-width: 768px) {
-    nav {
+  #mainNav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--bg-primary);
+    background: var(--bg-primary); /* use your variable */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -667,15 +668,16 @@ footer {
     transform: translateX(100%);
     transition: transform 0.3s ease;
     padding: 2rem;
-    }
-    nav.open {
+    z-index: 1000;
+  }
+  #mainNav.open {
     transform: translateX(0);
-    }
-    .nav-toggle {
+  }
+  .nav-toggle {
     display: block;
     z-index: 1001;
-    }
-
+  }
+}
     .project-card .project-details {
     grid-template-columns: 1fr;
     gap: 0.5rem;
